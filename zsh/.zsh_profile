@@ -1,0 +1,11 @@
+# export XDG_CONFIG_HOME=$HOME/.config
+VIM="nvim"
+
+PERSONAL=$XDG_CONFIG_HOME/personal
+
+export GIT_EDITOR=$VIM
+export DOTFILES=$HOME/.files
+
+# export PATH=$HOME/.local/bin
+
+bindkey -s ^f "tmux-sessionizer\n"
