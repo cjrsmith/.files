@@ -1,2 +1,3 @@
-require("csmith")
+require("config")
 print("hello")
+
