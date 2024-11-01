@@ -197,4 +197,4 @@ bar {
 bindsym $mod+Shift+period exec systemctl suspend
 
 exec_always feh --bg-scale /home/csmith/Pictures/wallpaper.png
-exec_always compton
+exec compton
