@@ -9,6 +9,8 @@ typescript
 zsh
 cpp
 c
+conda
+mamba
 lua
 rust
 python
