@@ -1,5 +1,5 @@
 function GimmeeColours(colour)
-	colour = colour or "cyberdream"
+	colour = colour or "catppuccin-mocha"
 	vim.cmd.colorscheme(colour)
 
 	vim.api.nvim_set_hl(0, "Normal", { bg = "none"})
@@ -7,7 +7,8 @@ function GimmeeColours(colour)
 end
 
 return {
-	"scottmckendry/cyberdream.nvim",
+	"catppuccin/nvim",
+    name = "catppuccin",
 	lazy = false, -- make sure we load this during startup if it is your main colorscheme
 	priority = 1000, -- make sure to load this before all the other start plugins
 	config = function()
