@@ -21,3 +21,8 @@ theme:
 
 authorColors:
   '*': '#b4befe'
+
+nerdFontsVersion: "3"
+
+# If true (default), file icons are shown in the file views. Only relevant if NerdFontsVersion is not empty.
+showFileIcons: true
