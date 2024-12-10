@@ -1,6 +1,6 @@
 theme:
   activeBorderColor:
-    - '#89b4fa'
+    - '#a6e3a1'
     - bold
   inactiveBorderColor:
     - '#a6adc8'
