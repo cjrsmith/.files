@@ -1,6 +1,7 @@
 #!/bin/bash
 
-BAT=$(acpi -b | grep -E -o '[0-9][0-9]?%')
+BAT=$(acpi -b | grep -E -o '[0-9]*?%')
+TIME=$(acpi -b | grep -E -o '[0-9]*:[0-9]*:[0-9]* remaining')
 CHARGING=$(acpi -b | grep -E -o 'Charging')
 ICON="󰁹 "
 
@@ -31,8 +32,8 @@ else
 fi
 
 # Full and short texts
-echo "$ICON$BAT"
-echo "$ICON$BAT"
+echo "$ICON$BAT $TIME"
+echo "$ICON$BAT $TIME"
 
 # Set urgent flag below 5% or use orange below 20%
 [ ${BAT%?} -le 5 ] && exit 33
