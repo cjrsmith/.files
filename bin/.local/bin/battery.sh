@@ -32,11 +32,11 @@ else
 fi
 
 # Full and short texts
-echo "$ICON$BAT $TIME"
-echo "$ICON$BAT $TIME"
+echo "<span background='#7f849c' foreground='#45475a'></span><span background='#45475a'>$ICON$BAT $TIME </span>"
+echo "<span background='#7f849c' foreground='#45475a'></span><span background='#45475a'>$ICON$BAT $TIME </span>"
 
 # Set urgent flag below 5% or use orange below 20%
-[ ${BAT%?} -le 5 ] && exit 33
+[ ${BAT%?} -le 5 ] && echo "#d20f39"
 [ ${BAT%?} -le 20 ] && echo "#FF8000"
 
 exit 0

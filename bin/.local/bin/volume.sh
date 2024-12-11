@@ -14,11 +14,11 @@ else
 fi
 
 # Full and short texts
-echo "$ICON$VOLUME"
-echo "$ICON$VOLUME"
+echo "<span background='#b4befe' foreground='#7f849c'></span><span background='#7f849c'>$ICON$VOLUME </span>"
+echo "<span background='#b4befe' foreground='#7f849c'></span><span background='#7f849c'>$ICON$VOLUME </span>"
 
 # Set urgent flag when muted or use orange when 0%
-[ ${VOLUME} == "MUTE" ] && exit 33
+[ ${VOLUME} == "MUTE" ] && echo "#d20f39"
 [ ${VOLUME%?} == 0 ] && echo "#FF8000"
 
 exit 0
