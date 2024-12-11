@@ -29,13 +29,14 @@ client.background       #F8F8F2
 
 bar {
   status_command i3blocks -c ~/.config/i3/i3blocks.conf
+  separator_symbol " "
   colors {
-    background #282A36
+    background #11111b
     statusline #F8F8F2
     separator  #44475A
 
-    focused_workspace  #44475A #44475A #F8F8F2
-    active_workspace   #282A36 #44475A #F8F8F2
+    focused_workspace  #44475A #a6e3a1 #11111b
+    active_workspace   #282A36 #a6e3a1 #11111b
     inactive_workspace #282A36 #282A36 #BFBFBF
     urgent_workspace   #FF5555 #FF5555 #F8F8F2
     binding_mode       #FF5555 #FF5555 #F8F8F2
