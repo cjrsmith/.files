@@ -1,12 +1,13 @@
 #!/bin/bash
 
 BAT=$(acpi -b | grep -E -o '[0-9]*?%')
-TIME=$(acpi -b | grep -E -o '[0-9]*:[0-9]*:[0-9]* remaining')
+TIME=" "$(acpi -b | grep -E -o '[0-9]*:[0-9]*:[0-9]* remaining')" "
 CHARGING=$(acpi -b | grep -E -o 'Charging')
 ICON="󰁹 "
 
 if [ $CHARGING == "Charging" ]; then
     ICON="󰂄 "
+    TIME=" charging "
 elif [ ${BAT%?} -ge 90 ] && [ ${BAT%?} -lt 100 ]; then
     ICON="󰂂 "
 elif [ ${BAT%?} -ge 80 ] && [ ${BAT%?} -lt 90 ]; then
@@ -28,12 +29,13 @@ elif [ ${BAT%?} -ge 10 ] && [ ${BAT%?} -lt 20 ]; then
 elif [ ${BAT%?} -ge 0 ] && [ ${BAT%?} -lt 10 ]; then
     ICON="󰂎 "
 else
-    ICON="󰁹 "
+    ICON="󰚥 "
+    TIME=" "
 fi
 
 # Full and short texts
-echo "<span background='#7f849c' foreground='#45475a'></span><span background='#45475a'>$ICON$BAT $TIME </span>"
-echo "<span background='#7f849c' foreground='#45475a'></span><span background='#45475a'>$ICON$BAT $TIME </span>"
+echo "<span background='#7f849c' foreground='#45475a'></span><span background='#45475a'>$ICON$BAT$TIME</span>"
+echo "<span background='#7f849c' foreground='#45475a'></span><span background='#45475a'>$ICON$BAT$TIME</span>"
 
 # Set urgent flag below 5% or use orange below 20%
 [ ${BAT%?} -le 5 ] && echo "#d20f39"
