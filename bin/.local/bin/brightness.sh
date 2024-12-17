@@ -28,8 +28,8 @@ else
 fi
 
 # Full and short texts
-echo "<span foreground='#b4befe'></span><span background='#b4befe'>$ICON$BRIGHTNESS </span>"
-echo "<span foreground='#b4befe'></span><span background='#b4befe'>$ICON$BRIGHTNESS </span>"
+echo "<span background='#a6e3a1' foreground='#b4befe'></span><span background='#b4befe'>$ICON$BRIGHTNESS </span>"
+echo "<span background='#a6e3a1' foreground='#b4befe'></span><span background='#b4befe'>$ICON$BRIGHTNESS </span>"
 
 # Set urgent flag below 5% or use orange below 20%
 [ ${BRIGHTNESS%?} -le 5 ] && echo "#d20f39"
