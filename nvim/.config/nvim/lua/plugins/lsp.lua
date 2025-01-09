@@ -54,6 +54,7 @@ return {
             sources = {
                 { name = 'nvim_lsp' },
                 { name = 'luasnip' },
+                { name = 'render-markdown' },
             },
             mapping = cmp.mapping.preset.insert({
                 ["<Tab>"] = cmp.mapping(function(fallback)
