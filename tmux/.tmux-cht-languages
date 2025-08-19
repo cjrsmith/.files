@@ -15,6 +15,9 @@ mamba
 lua
 rust
 python
+pytest
+poetry
+venv
 bash
 php
 haskell
