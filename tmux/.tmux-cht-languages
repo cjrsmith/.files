@@ -1,4 +1,5 @@
 golang
+godot
 solidity
 vlang
 v
@@ -14,6 +15,9 @@ mamba
 lua
 rust
 python
+pytest
+poetry
+venv
 bash
 php
 haskell
@@ -21,3 +25,4 @@ ArnoldC
 css
 html
 gdb
+zig

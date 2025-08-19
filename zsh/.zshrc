@@ -112,29 +112,39 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim="nvim"
+alias godot="godot.linuxbsd.editor.x86_64"
 
 source ~/.zsh_profile
 
+# TODO: remove comments when istalling pyenv or conda
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/csmith/miniforge3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/csmith/miniforge3/etc/profile.d/conda.sh" ]; then
-        . "/home/csmith/miniforge3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/csmith/miniforge3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
+# __conda_setup="$('/home/csmith/miniforge3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+# if [ $? -eq 0 ]; then
+#     eval "$__conda_setup"
+# else
+#     if [ -f "/home/csmith/miniforge3/etc/profile.d/conda.sh" ]; then
+#         . "/home/csmith/miniforge3/etc/profile.d/conda.sh"
+#     else
+#         export PATH="/home/csmith/miniforge3/bin:$PATH"
+#     fi
+# fi
+# unset __conda_setup
 
-if [ -f "/home/csmith/miniforge3/etc/profile.d/mamba.sh" ]; then
-    . "/home/csmith/miniforge3/etc/profile.d/mamba.sh"
-fi
-# <<< conda initialize <<<
+# if [ -f "/home/csmith/miniforge3/etc/profile.d/mamba.sh" ]; then
+#     . "/home/csmith/miniforge3/etc/profile.d/mamba.sh"
+# fi
+# # <<< conda initialize <<<
 
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+# export PYENV_ROOT="$HOME/.pyenv"
+# [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init -)"
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
 eval "$(starship init zsh)"

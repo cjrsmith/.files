@@ -1,0 +1,69 @@
+[backslide]
+delay=5
+elapsed-time=0
+image-list=['/usr/share/backgrounds/pop/ahmadreza-sajadi-10140-edit.jpg', '/usr/share/backgrounds/pop/benjamin-voros-250200.jpg', '/usr/share/backgrounds/pop/ferdinand-stohr-149422.jpg', '/usr/share/backgrounds/pop/galen-crout-175291.jpg', '/usr/share/backgrounds/pop/jad-limcaco-183877.jpg', '/usr/share/backgrounds/pop/jake-hills-36605.jpg', '/usr/share/backgrounds/pop/jared-evans-119758.jpg', '/usr/share/backgrounds/pop/jasper-van-der-meij-97274-edit.jpg', '/usr/share/backgrounds/pop/kait-herzog-8242.jpg', '/usr/share/backgrounds/pop/kate-hazen-COSMIC-desktop-wallpaper.png', '/usr/share/backgrounds/pop/kate-hazen-fractal-mountains.png', '/usr/share/backgrounds/pop/kate-hazen-mort1mer.png', '/usr/share/backgrounds/pop/kate-hazen-pop-m3lvin.png', '/usr/share/backgrounds/pop/kate-hazen-pop-retro1.png', '/usr/share/backgrounds/pop/kate-hazen-pop-retro2.png', '/usr/share/backgrounds/pop/kate-hazen-pop-space.png', '/usr/share/backgrounds/pop/kate-hazen-unleash-your-robot.png', '/usr/share/backgrounds/pop/kate-hazen-unleash-your-robot-blue.png', '/usr/share/backgrounds/pop/nasa-45068.jpg', '/usr/share/backgrounds/pop/nasa-53884.jpg', '/usr/share/backgrounds/pop/nasa-89125.jpg', '/usr/share/backgrounds/pop/nasa-89127.jpg', '/usr/share/backgrounds/pop/ng-32703.jpg', '/usr/share/backgrounds/pop/nick-nazzaro-bedroom.png', '/usr/share/backgrounds/pop/nick-nazzaro-desert.png', '/usr/share/backgrounds/pop/nick-nazzaro-ice-cave.png', '/usr/share/backgrounds/pop/nick-nazzaro-jungle-green.png', '/usr/share/backgrounds/pop/nick-nazzaro-jungle-red.png', '/usr/share/backgrounds/pop/nick-nazzaro-space-blue.png', '/usr/share/backgrounds/pop/nick-nazzaro-space-red.png', '/usr/share/backgrounds/pop/nick-nazzaro-underwater.png', '/usr/share/backgrounds/pop/ricardo-gomez-angel-180819-blue.jpg', '/usr/share/backgrounds/pop/samuel-zeller-337041.jpg', '/usr/share/backgrounds/pop/sean-afnan-244576.jpg', '/usr/share/backgrounds/pop/sebastien-gabriel-232361.jpg', '/usr/share/backgrounds/pop/spacex-81773.jpg', '/usr/share/backgrounds/pop/tim-mccartney-39907.jpg', '/usr/share/backgrounds/pop/tony-webster-97532.jpg']
+random=false
+
+[dash-to-dock]
+dash-max-icon-size=42
+dock-fixed=false
+extend-height=false
+intellihide=true
+manualhide=false
+
+[just-perfection]
+animation=0
+clock-menu-position=2
+
+[pop-cosmic]
+clock-alignment='LEFT'
+overlay-key-action='LAUNCHER'
+show-applications-button=false
+show-workspaces-button=false
+
+[pop-shell]
+active-hint=false
+focus-down=['<Super>Down', '<Super>KP_Down', '<Super>j', '<Alt>j']
+focus-left=['<Super>Left', '<Super>KP_Left', '<Super>h', '<Alt>h']
+focus-right=['<Super>Right', '<Super>KP_Right', '<Super>l', '<Alt>l']
+focus-up=['<Super>Up', '<Super>KP_Up', '<Super>k', '<Alt>k']
+gap-inner=uint32 3
+gap-outer=uint32 3
+tile-by-default=true
+
+[space-bar/appearance]
+active-workspace-background-color='rgb(46,194,126)'
+active-workspace-text-color='rgb(36,31,49)'
+
+[space-bar/behavior]
+always-show-numbers=false
+position='center'
+smart-workspace-names=false
+
+[space-bar/shortcuts]
+enable-activate-workspace-shortcuts=true
+
+[switcher]
+fade-enable=true
+font-size=uint32 18
+icon-size=uint32 22
+launcher-stats='{"ghostty_ghostty.desktop":10,"com.mattjakeman.ExtensionManager.desktop":12,"io.elementary.appcenter.desktop":8,"gnome-control-center.desktop":7,"org.gnome.tweaks.desktop":3,"org.gnome.Weather.desktop":1,"org.blender.Blender.desktop":10,"com.valvesoftware.Steam.desktop":3,"docker-desktop.desktop":5,"firefox.desktop":13,"com.google.Chrome.desktop":18,"com.spotify.Client.desktop":1,"org.gnome.Nautilus.desktop":24,"org.inkscape.Inkscape.desktop":4,"snap-store_snap-store.desktop":2,"pixeltaken_pixeltaken.desktop":1,"org.gnome.eog.desktop":1,"gimp.desktop":2,"syncthing-ui.desktop":6,"syncthing-start.desktop":6,"me.kozec.syncthingtk.desktop":1,"nm-connection-editor.desktop":1,"aseprite.desktop":1,"code.desktop":3,"pgadmin4.desktop":1}'
+max-width-percentage=uint32 50
+on-active-display=true
+show-switcher=['<Alt>d']
+
+[tactile]
+col-0=2
+col-3=2
+gap-size=14
+layout-3-col-0=1
+layout-3-col-2=0
+layout-3-col-3=0
+layout-3-row-1=0
+layout-3-row-2=0
+maximize=false
+monitor-0-layout=1
+row-2=0
+show-settings=['<Shift><Alt>t']
+show-tiles=['<Alt>t']
+tile-0-0=['q']

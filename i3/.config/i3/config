@@ -81,7 +81,8 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+# bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec ghostty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -143,6 +144,10 @@ bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
+
+# Floating window sizes:
+floating_minimum_size 960 x 540
+floating_maximum_size 960 x 540
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -255,7 +260,7 @@ bindsym $mod+r mode "resize"
 # Suspend
 bindsym $mod+Shift+period exec systemctl suspend
 
-exec_always feh --bg-scale /home/csmith/Pictures/wallpaper.png
+exec_always feh --bg-scale /usr/share/backgrounds/pop/nick-nazzaro-space-blue.png
 exec compton
 
 exec_always setxkbmap us
